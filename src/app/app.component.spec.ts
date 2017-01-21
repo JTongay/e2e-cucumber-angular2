@@ -25,6 +25,13 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('app works!');
   }));
 
+  it(`should have as title 'booyah!'`, async(() => {
+    let fixture = TestBed.createComponent(AppComponent);
+    let app = fixture.debugElement.componentInstance;
+    expect(app.booyah).toEqual('booyah!');
+  }));
+
+
   it('should render title in a h1 tag', async(() => {
     let fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
