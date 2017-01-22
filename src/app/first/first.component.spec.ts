@@ -28,6 +28,7 @@ describe('FirstComponent', () => {
 
   it('should say First works!', ()=>{
     console.log(component)
+    console.log(component.title)
     expect(component.title).toEqual('first works!')
 
   })
